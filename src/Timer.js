@@ -23,10 +23,13 @@ class Timer extends Component {
     clearInterval(this.interval);
   }
 
+<<<<<<< HEAD
   componentDidUpdate(prevProps, prevState, snapshot) {
     this.timer.current.style.color = "#" + Math.floor(Math.random() * 16777215).toString(16); 
   }
 
+=======
+>>>>>>> 1c97faee813112a0fab8ef76e34507f4d9d6cc79
   shouldComponentUpdate(nextProps, nextState) {
     if (this.state.time === nextState.time) {return false;}
     return true;
